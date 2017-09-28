@@ -7,6 +7,7 @@ class User(models.Model):
     full_name = models.CharField(max_length=100)
     singleP = models.IntegerField(default=0)
     multiP = models.IntegerField(default=0)
+
     def __unicode__(self):
         return self.username
 
