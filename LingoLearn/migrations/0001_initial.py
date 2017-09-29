@@ -25,9 +25,9 @@ class Migration(migrations.Migration):
             name='Item',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('English', models.CharField(max_length=20)),
-                ('French', models.IntegerField(default=0)),
-                ('Image', models.CharField(max_length=1000)),
+                ('English', models.CharField(max_length=30)),
+                ('French', models.CharField(max_length=30)),
+                ('Image', models.ImageField(upload_to=b'images')),
                 ('category', models.ForeignKey(to='LingoLearn.Category')),
             ],
         ),
@@ -38,6 +38,9 @@ class Migration(migrations.Migration):
                 ('SP_total', models.IntegerField(default=0)),
                 ('MP_total', models.IntegerField(default=0)),
             ],
+            options={
+                'verbose_name_plural': 'Leaderboard',
+            },
         ),
         migrations.CreateModel(
             name='Points',
@@ -46,7 +49,7 @@ class Migration(migrations.Migration):
                 ('category', models.ForeignKey(to='LingoLearn.Category')),
             ],
             options={
-                'verbose_name_plural': 'Categories',
+                'verbose_name_plural': 'Points',
             },
         ),
         migrations.CreateModel(

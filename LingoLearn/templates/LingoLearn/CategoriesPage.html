@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>"Welcome to LingoLearn!"</title>
+</head>
+
+<body>
+    <header>Welcome to LingoLearn!</header>
+    <ul>
+        {% for category in categories %}
+            <li><a href="/LingoLearn/Categories/{{ category.id }}/">{{ category.category_english }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

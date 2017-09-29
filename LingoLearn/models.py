@@ -1,4 +1,10 @@
 from django.db import models
+from django.contrib.admin.widgets import AdminFileWidget
+from django.utils.translation import ugettext as _
+from django.utils.safestring import mark_safe
+from django.conf import settings
+from PIL import Image
+import os
 
 
 class User(models.Model):
@@ -7,6 +13,7 @@ class User(models.Model):
     full_name = models.CharField(max_length=100)
     singleP = models.IntegerField(default=0)
     multiP = models.IntegerField(default=0)
+
     def __unicode__(self):
         return self.username
 
@@ -27,6 +34,9 @@ class Item(models.Model):
     English = models.CharField(max_length=30)
     French = models.CharField(max_length=30)
     Image = models.CharField(max_length=1000)
+
+    def __unicode__(self):
+        return '%s %s %s %s %s' % (self.category, "  :  ", self.English,"-->", self.French)
 
 
 class Points(models.Model):
