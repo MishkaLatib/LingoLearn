@@ -1,0 +1,74 @@
+body{
+    background: white url("http://wallpaper.statusfacebook.com/dp/images/8/IMG_710710.jpeg");
+}
+
+.navbar-default .navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: red;
+}
+
+header{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: darkblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-color: beige;
+}
+
+#Item_Choices{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.item-card {
+    float: left;
+	margin: 10px;
+	-webkit-perspective: 600px;
+}
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	border: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.front {
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 1;
+    font-size: 25px;
+}
+
+.back {
+	padding: 20px;
+    padding-top: 30px;
+	width: 200px;
+	height: 200px;
+	-webkit-transform: rotateY(-180deg);
+    color: red;
+}
+
+.item-card:hover .back {
+	-webkit-transform: rotateY(0);
+}
+
+.item-card:hover .front {
+	-webkit-transform: rotateY(180deg);
+}
+
+.card-image {
+width: 100%;
+height: 100%;
+}

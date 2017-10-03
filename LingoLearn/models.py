@@ -21,6 +21,7 @@ class User(models.Model):
 class Category(models.Model):
     category_english = models.CharField(max_length=30)
     category_french = models.CharField(max_length=30)
+    category_image = models.CharField(max_length=1000)
 
     class Meta:
         verbose_name_plural = "Categories"
@@ -54,3 +55,13 @@ class Leaderboard(models.Model):
     class Meta:
         verbose_name_plural = "Leaderboard"
 
+
+class Badges(models.Model):
+   badge_title = models.CharField(max_length=50)
+   category = models.ForeignKey(Category, on_delete=models.CASCADE)
+   points_needed = models.IntegerField(default=0)
+   badge_image = models.CharField(max_length=1000)
+   def __str__(self):
+       return self.badge_title
+   class Meta:
+       verbose_name_plural = "Badges"

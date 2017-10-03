@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{%  extends 'LingoLearn/base.html' %}
+
+{% block body %}
+
+    {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/items.css' %}" />
+
 <head>
     <meta charset="UTF-8">
-    <title>"Categories"</title>
+    <title>"Items"</title>
 </head>
 
 <body>
-    <header>Items in this category are:</header>
-    <ul>
-         {% for item in i %}
-            <li> <img src="{{ item.Image }}" width="200px"/> </li>
-        {% endfor %}
-    </ul>
+
+    <div id="Item_Choices">
+
+        <header> - Select an Image to Learn its Translation - </header>
+             {% for item in items %}
+
+                        <div class="item-card">
+                                <div class="front">
+                                     {{ item.English }} <img src="{{ item.Image }}" width="200px" height="170px"/>
+                                </div>
+                                <div class="back">
+                                    <h1>{{ item.French }}</h1>
+                                </div>
+                        </div>
+             {% endfor %}
+    </div>
 </body>
 
+
 </html>
+{% endblock %}

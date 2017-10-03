@@ -1,0 +1,47 @@
+body{
+    background: white url("http://wallpaper.statusfacebook.com/dp/images/8/IMG_710710.jpeg");
+}
+
+.navbar-default .navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: red;
+}
+
+header{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: darkblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: beige;
+}
+
+#LM_Categories{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#Cat_choice{
+    border-radius: 15px;
+    border: 8px solid navy;
+    margin: 45px;
+    font-size: 35px;
+    font-family: 'Raleway', cursive;
+    background-color: white;
+    color: red;
+
+}
+
+.btn.special {
+    background-color: white;
+    color: black;
+    background-position: 0;
+    transition: none;
+}

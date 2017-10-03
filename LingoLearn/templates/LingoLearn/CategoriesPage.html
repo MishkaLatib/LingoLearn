@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{%  extends 'LingoLearn/base.html' %}
+
+{% block body %}
+    {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/CategoriesPage.css' %}" />
 <head>
     <meta charset="UTF-8">
-    <title>"Welcome to LingoLearn!"</title>
+    <title>"Learning Mode"</title>
 </head>
-
 <body>
-    <header>Welcome to LingoLearn!</header>
-    <ul>
+    <div id="LM_Categories">
+        <header>  -   Select a Category to Start Learning Now    - </header>
+
         {% for category in categories %}
-            <li><a href="/LingoLearn/Categories/{{ category.id }}/">{{ category.category_english }}</a></li>
+            <a class="btn btn.special" id="Cat_choice" href="/LingoLearn/Categories/{{ category.id }}">{{ category.category_english }}<br><br>
+                <img src="{{ category.category_image }}" width="200px" height="200px"/>
+            </a>
         {% endfor %}
-    </ul>
+    </div>
+
 </body>
+{% endblock %}
 
 </html>

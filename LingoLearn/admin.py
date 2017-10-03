@@ -11,3 +11,4 @@ admin.site.register(models.Item)
 #Points information
 admin.site.register(models.Points)
 
+admin.site.register(models.Badges)

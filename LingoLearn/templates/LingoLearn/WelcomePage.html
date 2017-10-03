@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>"Welcome to LingoLearn"</title>
-</head>
+{%  extends 'LingoLearn/base.html' %}
+<!-- loads path to static files-->
 
-<body>
-    <header>Welcome to LingoLearn!</header>
-</body>
+{% block body %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/WelcomePage.css' %}" />
 
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <title>"Welcome to LingoLearn"</title>
+    </head>
+
+    <body>
+        <div id="A">
+             <header>Welcome to LingoLearn!</header>
+
+             <button id="SignIn" type="button" class="btn btn-primary btn-lg btn-block">
+                 Sign In
+             </button>
+        </div>
+
+    <img src="http://images.cpcache.com/image/24315092.png" class="img-responsive" width="550px">
+    </body>
+
+    </html>
+
+{% endblock %}

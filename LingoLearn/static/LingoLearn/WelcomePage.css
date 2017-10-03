@@ -1,0 +1,35 @@
+
+body{
+    background: white url("http://wallpaper.statusfacebook.com/dp/images/8/IMG_710710.jpeg");
+}
+
+.navbar-default .navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: red;
+}
+
+header{
+    font-size: 75px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    padding-top: 100px;
+    text-shadow: 0 4px black;
+}
+
+
+#A{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 3%;
+
+}
+
+#SignIn{
+    margin-top: 5%;
+    padding-bottom: 15px;
+    font-family: 'Raleway', cursive;
+    font-size: 20px;
+}
