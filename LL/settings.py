@@ -20,7 +20,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [u'196.24.176.252']
 
-LOGIN_REDIRECT_URL = '/LingoLearn'
+LOGIN_REDIRECT_URL = '/LingoLearn/ProfilePage'
 
 
 # Application definition

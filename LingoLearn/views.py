@@ -61,8 +61,5 @@ class UserFormView(View):
         return render(request, self.template_name, {'form': form})
 
 
-class ProfileView(ListView):
-    context_object_name = 'userproject_list'
-    template_name = 'userproject_list.html'
-    def get_queryset(self):
-        return Userproject.objects.filter(user=self.request.user)
+def ProfileView(request):
+    return render(request, 'LingoLearn/ProfilePage.html')
