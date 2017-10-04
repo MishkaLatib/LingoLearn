@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{%  extends 'LingoLearn/base.html' %}
-<!-- loads path to static files-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-{% block body %}
-    {% load staticfiles %}
+{% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/WelcomePage.css' %}" />
 
-    <head>
-        <meta charset="UTF-8">
-        <title>"Welcome to LingoLearn"</title>
-    </head>
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <title>"Welcome to LingoLearn"</title>
+</head>
 
-    <body>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!--logo-->
+            <div class="navbar-header">
+
+                 <a class="navbar-brand" href="{% url 'WelcomePage' %}">LingoLearn</a>
+
+            </div>
+        </div>
+    </nav>
         <div id="A">
             <header>Welcome to LingoLearn!</header>
             <a href="{% url 'register' %}" role="button" id="SignUp" class="btn btn-primary btn-leg btn-block">
                  Create New Account
-             </a>
+            </a>
             <a href="{% url 'login' %}" role="button" id="SignIn" class="btn btn-primary btn-leg btn-block">
                  Sign In
             </a>
         </div>
 
-    <img src="http://images.cpcache.com/image/24315092.png" class="img-responsive" width="550px">
-    </body>
+        <img src="http://images.cpcache.com/image/24315092.png" class="img-responsive" width="550px">
 
-    </html>
+</body>
+</html>
 
 {% endblock %}

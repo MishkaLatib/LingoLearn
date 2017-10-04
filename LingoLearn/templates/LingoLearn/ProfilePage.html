@@ -6,7 +6,7 @@
 
 {% block body %}
     {% load staticfiles %}
-    <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/WelcomePage.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/ProfilePage.css' %}" />
 
     <head>
         <meta charset="UTF-8">
@@ -14,19 +14,13 @@
     </head>
 
     <body>
-        <div id="A">
-            <header>Welcome to LingoLearn {{ user.username }}!</header>
-            <a href="{% url 'register' %}" role="button" id="SignUp" class="btn btn-primary btn-leg btn-block">
-                 Create New Account
-             </a>
-            <a href="{% url 'login' %}" role="button" id="SignIn" class="btn btn-primary btn-leg btn-block">
-                 Sign In
-            </a>
-        </div>
-
+    <div id="A">
+        <header>Welcome to your LingoLearn Page, {{ user.username }}!</header>
+    </div>
     <img src="http://images.cpcache.com/image/24315092.png" class="img-responsive" width="550px">
     </body>
 
     </html>
 
 {% endblock %}
+

@@ -63,3 +63,13 @@ class UserFormView(View):
 
 def ProfileView(request):
     return render(request, 'LingoLearn/ProfilePage.html')
+
+
+
+#Lingo Practise Game related Views
+
+class GameCategoriesPage(generic.ListView):
+    template_name = 'LingoLearn/GameCategoriesPage.html'
+    context_object_name = "categories"
+    def get_queryset(self):
+        return Category.objects.all()
