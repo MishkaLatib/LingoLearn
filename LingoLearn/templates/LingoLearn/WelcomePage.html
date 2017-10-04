@@ -15,11 +15,13 @@
 
     <body>
         <div id="A">
-             <header>Welcome to LingoLearn!</header>
-
-             <button id="SignIn" type="button" class="btn btn-primary btn-lg btn-block">
+            <header>Welcome to LingoLearn!</header>
+            <a href="{% url 'register' %}" role="button" id="SignUp" class="btn btn-primary btn-leg btn-block">
+                 Create New Account
+             </a>
+            <a href="{% url 'login' %}" role="button" id="SignIn" class="btn btn-primary btn-leg btn-block">
                  Sign In
-             </button>
+            </a>
         </div>
 
     <img src="http://images.cpcache.com/image/24315092.png" class="img-responsive" width="550px">

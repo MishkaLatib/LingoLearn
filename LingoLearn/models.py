@@ -5,18 +5,7 @@ from django.utils.safestring import mark_safe
 from django.conf import settings
 from PIL import Image
 import os
-
-
-class User(models.Model):
-    username = models.CharField(max_length=30)
-    password = models.CharField(max_length=20)
-    full_name = models.CharField(max_length=100)
-    singleP = models.IntegerField(default=0)
-    multiP = models.IntegerField(default=0)
-
-    def __unicode__(self):
-        return self.username
-
+from django.contrib.auth.models import User
 
 class Category(models.Model):
     category_english = models.CharField(max_length=30)
@@ -41,19 +30,12 @@ class Item(models.Model):
 
 
 class Points(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    points = models.IntegerField(default=0)
 
     class Meta:
         verbose_name_plural = "Points"
-
-class Leaderboard(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    SP_total = models.IntegerField(default=0)
-    MP_total = models.IntegerField(default=0)
-
-    class Meta:
-        verbose_name_plural = "Leaderboard"
 
 
 class Badges(models.Model):

@@ -18,7 +18,9 @@ SECRET_KEY = '@s(cq$7d2kelt#=d8d^7$%4_^$^)dw6d1et(5*wx@&tyudd3v%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'127.0.0.1']
+ALLOWED_HOSTS = [u'196.24.176.252']
+
+LOGIN_REDIRECT_URL = '/LingoLearn'
 
 
 # Application definition
@@ -32,6 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'registration'
+
 ]
 
 MIDDLEWARE_CLASSES = (
@@ -50,8 +54,7 @@ ROOT_URLCONF = 'LL.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'LingoLearn/templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'LingoLearn/templates') ]        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -63,6 +66,9 @@ TEMPLATES = [
         },
     },
 ]
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+)
 
 WSGI_APPLICATION = 'LL.wsgi.application'
 

@@ -1,0 +1,36 @@
+{%  extends 'LingoLearn/base.html' %}
+
+
+{% block title %}Register{% endblock %}
+{% block register_active %}active{% endblock %}
+
+{% block body %}
+
+<!-- loads path to static files-->
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/Register.css' %}" />
+
+<div class="container" >
+
+    <div class="panel panel-default" id="block">
+
+            <h3>Register for a LingoLearn Account!</h3>
+            {% if error_message %}
+                <p><strong>{{ error_message }}</strong></p>
+            {% endif %}
+            <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data" id="form">
+                {% csrf_token %}
+                {% include 'LingoLearn/form_template.html' %}
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+    </div>
+</div>
+
+
+
+{% endblock %}
