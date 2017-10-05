@@ -8,10 +8,9 @@ body{
     color: red;
 }
 
-header{
+.heading{
     font-size: 50px;
     font-family: 'Lobster', cursive;
-    color: darkblue;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 20px;
@@ -21,6 +20,15 @@ header{
     background-color: beige;
 }
 
+header{
+    color: darkblue;
+}
+
+h2{
+    color: red;
+}
+
+
 #LM_Categories{
     display: table;
     margin-left: auto;
@@ -28,15 +36,23 @@ header{
     text-align: center;
 }
 
-#Cat_choice{
+.Cat_choice{
     border-radius: 15px;
-    border: 8px solid navy;
     margin: 45px;
     font-size: 35px;
     font-family: 'Raleway', cursive;
     background-color: white;
-    color: red;
 
+}
+
+#blue_choice{
+    color: darkblue;
+    border: 8px solid navy;
+}
+
+#red_choice{
+    border: 8px solid red;
+    color: red;
 }
 
 .btn.special {

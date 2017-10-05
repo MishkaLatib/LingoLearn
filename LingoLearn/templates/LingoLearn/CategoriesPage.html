@@ -12,10 +12,10 @@
 </head>
 <body>
     <div id="LM_Categories">
-        <header>  -   Select a Category to Start Learning Now    - </header>
+        <header class="heading">  -   Select a Category to Start Learning Now    - </header>
 
         {% for category in categories %}
-            <a class="btn btn.special" id="Cat_choice" href="/LingoLearn/Categories/{{ category.id }}">{{ category.category_english }}<br><br>
+            <a class="btn btn.special Cat_choice" id="blue_choice" href="/LingoLearn/Categories/{{ category.id }}">{{ category.category_english }}<br><br>
                 <img src="{{ category.category_image }}" width="200px" height="200px"/>
             </a>
         {% endfor %}

@@ -2,7 +2,7 @@ from django.http import HttpResponse, request
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from django.template.backends import django
-
+import random
 from .models import Category
 from .models import Item
 from django.views import generic
@@ -25,6 +25,7 @@ class item_list(generic.ListView):
     context_object_name = "items"
     def get_queryset(self):
         i = Item.objects.filter(category_id=self.kwargs['category_id'])
+        print(i)
         return i
 
 class UserFormView(View):
@@ -65,7 +66,6 @@ def ProfileView(request):
     return render(request, 'LingoLearn/ProfilePage.html')
 
 
-
 #Lingo Practise Game related Views
 
 class GameCategoriesPage(generic.ListView):
@@ -73,3 +73,24 @@ class GameCategoriesPage(generic.ListView):
     context_object_name = "categories"
     def get_queryset(self):
         return Category.objects.all()
+
+
+class GamePlay(generic.ListView):
+    template_name = 'LingoLearn/GamePlay.html'
+    context_object_name = "content"
+
+    def get_queryset(self):
+        items = list(Item.objects.filter(category_id=self.kwargs['category_id']))
+        random.shuffle(items)
+        content = items[:5]
+        possible_answers =list(content)
+        random.shuffle(possible_answers)
+        answer = possible_answers[0]
+        content.append(answer)
+        return content
+
+    def get_answer(self):
+        items = self.kwargs['content']
+        answer = items[0]
+        print (answer)
+        return answer

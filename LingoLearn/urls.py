@@ -17,5 +17,6 @@ urlpatterns =(
     url(r'^Categories/$', views.CategoriesPage.as_view(), name='CategoriesPage'),
     url(r'^Categories/(?P<category_id>[0-9])/$', views.item_list.as_view(), name='items'),
     url(r'^CategoryChoice/$', views.GameCategoriesPage.as_view(), name='GameCategoriesPage'),
+    url(r'^CategoryChoice/(?P<category_id>[0-9])/GamePlay/$', views.GamePlay.as_view(), name='GamePlay'),
     url('^', include('django.contrib.auth.urls'))
 )

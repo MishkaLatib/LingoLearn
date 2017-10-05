@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{%  extends 'LingoLearn/base.html' %}
+
+{% block body %}
+
+    {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/items.css' %}" />
+
+<head>
+    <meta charset="UTF-8">
+    <title>"Items"</title>
+</head>
+
+<body>
+
+    <div id="Item_Choices">
+
+
+        <header> - {{ content.5 }} - </header>
+
+             {% for i in content %}
+
+                        <div class="item-card">
+                                <button id="selection">
+                                     <img src="{{ i.Image }}" width="200px" height="170px"/>
+                                </button>
+
+                        </div>
+             {% endfor %}
+    </div>
+</body>
+
+
+</html>
+{% endblock %}
