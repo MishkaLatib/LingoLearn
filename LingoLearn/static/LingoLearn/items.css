@@ -78,3 +78,26 @@ height: 100%;
     border-radius: 10px;
     border: 1px solid black;
 }
+
+#FrenchWord{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 70px;
+    text-align: center;
+    color: darkgreen;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border: 10px solid transparent;
+    border-radius: 15px;
+    padding: 2px;
+    -webkit-border-image: url(http://weclipart.com/gimg/FC7612AFA6603A30/vine-border-green-md.png) 50 round; /* Safari 3.1-5 */
+    -o-border-image: url(http://weclipart.com/gimg/FC7612AFA6603A30/vine-border-green-md.png) 50 round; /* Opera 11-12.1 */
+    border-image: url(http://weclipart.com/gimg/FC7612AFA6603A30/vine-border-green-md.png) 50 round;
+}

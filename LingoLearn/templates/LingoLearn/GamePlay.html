@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 {%  extends 'LingoLearn/base.html' %}
 
 {% block body %}
@@ -16,11 +17,14 @@
 <body>
 
     <div id="Item_Choices">
+    
+        <header> - {{ "Choose the Correct Image for: " }} - </header>
 
+        <div id="FrenchWord">
+            <h1> {{ content.pop.French }} </h1>
+        </div>
 
-        <header> - {{ content.5 }} - </header>
-
-             {% for i in content %}
+                {% for i in content %}
 
                         <div class="item-card">
                                 <button id="selection">
@@ -28,7 +32,7 @@
                                 </button>
 
                         </div>
-             {% endfor %}
+                {% endfor %}
     </div>
 </body>
 

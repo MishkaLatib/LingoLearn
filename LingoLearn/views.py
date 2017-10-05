@@ -86,11 +86,8 @@ class GamePlay(generic.ListView):
         possible_answers =list(content)
         random.shuffle(possible_answers)
         answer = possible_answers[0]
+        #self.request.session['answer'] = "hfdkjfnhdkujnf"
+        #self.request.session.save()
         content.append(answer)
         return content
 
-    def get_answer(self):
-        items = self.kwargs['content']
-        answer = items[0]
-        print (answer)
-        return answer
