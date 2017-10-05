@@ -18,7 +18,7 @@ SECRET_KEY = '@s(cq$7d2kelt#=d8d^7$%4_^$^)dw6d1et(5*wx@&tyudd3v%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'196.24.176.252']
+ALLOWED_HOSTS = [u'196.24.179.215']
 
 LOGIN_REDIRECT_URL = '/LingoLearn/ProfilePage'
 
@@ -66,9 +66,6 @@ TEMPLATES = [
         },
     },
 ]
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.core.context_processors.request',
-)
 
 WSGI_APPLICATION = 'LL.wsgi.application'
 

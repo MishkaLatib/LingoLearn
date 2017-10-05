@@ -79,6 +79,11 @@ class GamePlay(generic.ListView):
     template_name = 'LingoLearn/GamePlay.html'
     context_object_name = "content"
 
+    def __init__(self, **kwargs):
+        super(GamePlay, self).__init__(**kwargs)
+        self.POST = None
+        self.GET = None
+
     def get_queryset(self):
         items = list(Item.objects.filter(category_id=self.kwargs['category_id']))
         random.shuffle(items)
@@ -91,3 +96,6 @@ class GamePlay(generic.ListView):
         content.append(answer)
         return content
 
+    def mymethod(request):
+        if request.POST.get('button'):
+            print('user clicked summary')

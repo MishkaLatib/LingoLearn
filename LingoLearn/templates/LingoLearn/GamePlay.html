@@ -17,7 +17,6 @@
 <body>
 
     <div id="Item_Choices">
-    
         <header> - {{ "Choose the Correct Image for: " }} - </header>
 
         <div id="FrenchWord">
@@ -27,10 +26,7 @@
                 {% for i in content %}
 
                         <div class="item-card">
-                                <button id="selection">
-                                     <img src="{{ i.Image }}" width="200px" height="170px"/>
-                                </button>
-
+                                <input type=image id="selection" name="button" src="{{ i.Image }}" width="200px" height="170px"/>
                         </div>
                 {% endfor %}
     </div>
