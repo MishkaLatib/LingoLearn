@@ -80,7 +80,7 @@ height: 100%;
 }
 
 #FrenchWord{
-    width: 50%;
+    width: 300px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -107,5 +107,18 @@ h2{
     font-size: 35px;
     text-align: center;
     color: darkgreen;
+}
+
+.outcomePass{
+    float: right;
+    padding: 0;
+    margin: 0;
+
+}
+
+.pics{
+    margin-top: 100px;
+    padding: 100px;
+
 }
 

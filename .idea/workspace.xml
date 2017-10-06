@@ -3,18 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bc362e98-1063-47df-b783-b19681b05d70" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/apps.py" afterPath="$PROJECT_DIR$/LingoLearn/apps.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/forms.py" afterPath="$PROJECT_DIR$/LingoLearn/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/models.py" afterPath="$PROJECT_DIR$/LingoLearn/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/static/LingoLearn/ProfilePage.css" afterPath="$PROJECT_DIR$/LingoLearn/static/LingoLearn/ProfilePage.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/static/LingoLearn/items.css" afterPath="$PROJECT_DIR$/LingoLearn/static/LingoLearn/items.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GameCategoriesPage.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GameCategoriesPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GamePlay.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GamePlay.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/ProfilePage.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/ProfilePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/WelcomePage.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/WelcomePage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/base.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/items.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/items.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/reg_form.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/reg_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/templates/registration/login.html" afterPath="$PROJECT_DIR$/LingoLearn/templates/registration/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LingoLearn/urls.py" afterPath="$PROJECT_DIR$/LingoLearn/urls.py" />
@@ -43,23 +40,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LingoLearn/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="115" column="26" lean-forward="false" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+            <state relative-caret-position="216">
+              <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LingoLearn/models.py">
+      <file leaf-file-name="ProfilePage.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/ProfilePage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="512">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,28 +65,8 @@
       <file leaf-file-name="GamePlay.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GamePlay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LL/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/items.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -98,28 +75,40 @@
       <file leaf-file-name="ProfilePage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/ProfilePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="504">
+              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LingoLearn/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LingoLearn/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="368">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/items.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LingoLearn/templates/registration/login.html">
+      <file leaf-file-name="GameCategoriesPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GameCategoriesPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+            <state relative-caret-position="360">
+              <caret line="23" column="101" lean-forward="false" selection-start-line="23" selection-start-column="101" selection-end-line="23" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -128,8 +117,8 @@
       <file leaf-file-name="items.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/items.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="75" column="7" lean-forward="false" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+            <state relative-caret-position="267">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -171,25 +160,25 @@
         <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/login.html" />
         <option value="$PROJECT_DIR$/LL/urls.py" />
         <option value="$PROJECT_DIR$/LingoLearn/static/LingoLearn/WelcomePage.css" />
-        <option value="$PROJECT_DIR$/LingoLearn/static/LingoLearn/ProfilePage.css" />
         <option value="$PROJECT_DIR$/LingoLearn/static/LingoLearn/CategoriesPage.css" />
         <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/CategoriesPage.html" />
-        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GameCategoriesPage.html" />
         <option value="$PROJECT_DIR$/LingoLearn/static/LingoLearn/GamePlay.css" />
         <option value="$PROJECT_DIR$/LingoLearn/apps.py" />
-        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/reg_form.html" />
         <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/WelcomePage.html" />
-        <option value="$PROJECT_DIR$/LingoLearn/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/base.html" />
-        <option value="$PROJECT_DIR$/LingoLearn/forms.py" />
         <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/items.html" />
         <option value="$PROJECT_DIR$/LL/settings.py" />
-        <option value="$PROJECT_DIR$/LingoLearn/models.py" />
-        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/ProfilePage.html" />
         <option value="$PROJECT_DIR$/LingoLearn/static/LingoLearn/items.css" />
-        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GamePlay.html" />
         <option value="$PROJECT_DIR$/LingoLearn/urls.py" />
+        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GamePlay.html" />
+        <option value="$PROJECT_DIR$/LingoLearn/models.py" />
+        <option value="$PROJECT_DIR$/LingoLearn/forms.py" />
+        <option value="$PROJECT_DIR$/LingoLearn/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/reg_form.html" />
+        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/base.html" />
+        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GameCategoriesPage.html" />
         <option value="$PROJECT_DIR$/LingoLearn/views.py" />
+        <option value="$PROJECT_DIR$/LingoLearn/templates/LingoLearn/ProfilePage.html" />
+        <option value="$PROJECT_DIR$/LingoLearn/static/LingoLearn/ProfilePage.css" />
       </list>
     </option>
   </component>
@@ -243,6 +232,12 @@
               <item name="LL" type="b2602c69:ProjectViewProjectNode" />
               <item name="LL" type="462c0819:PsiDirectoryNode" />
               <item name="LingoLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LL" type="462c0819:PsiDirectoryNode" />
+              <item name="LingoLearn" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,11 +266,6 @@
               <item name="LingoLearn" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LL" type="462c0819:PsiDirectoryNode" />
-              <item name="LL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LL" type="b2602c69:ProjectViewProjectNode" />
@@ -447,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507218161715</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Progress, ajax added to update variables. Single Player not working fully yet.">
+      <created>1507257539162</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1507257539162</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,28 +472,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3200409" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5018868" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30981594" sideWeight="0.49811321" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927224" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3200409" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -512,7 +487,8 @@
     <MESSAGE value="All login, register, logout processes done. Database updates appropriately. Practise mode working and complete." />
     <MESSAGE value="Game functionality incomplete." />
     <MESSAGE value="Randomisation of item choices presented in Game complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Randomisation of item choices presented in Game complete" />
+    <MESSAGE value="Progress, ajax added to update variables. Single Player not working fully yet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress, ajax added to update variables. Single Player not working fully yet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -705,13 +681,6 @@
     <entry file="file:///usr/lib/python2.7/dist-packages/django/contrib/admin/sites.py" />
     <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/login.html" />
     <entry file="file://$PROJECT_DIR$/LingoLearn/templates/ProfilePage.html" />
-    <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/Register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/WelcomePage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -727,13 +696,6 @@
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/django/views/generic/base.py" />
-    <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/ProfilePage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/GamePlay.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -750,6 +712,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/WelcomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/Register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -758,50 +744,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/form_template.html">
+    <entry file="file://$PROJECT_DIR$/LL/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/WelcomePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/reg_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GameCategoriesPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="-910">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -810,8 +764,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="35" column="100" lean-forward="false" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/reg_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/form_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -824,77 +812,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/items.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="75" column="7" lean-forward="false" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LL/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/items.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/ProfilePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LingoLearn/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GamePlay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/GameCategoriesPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="101" lean-forward="false" selection-start-line="23" selection-start-column="101" selection-end-line="23" selection-end-column="101" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="368">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/items.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/items.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LingoLearn/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="115" column="26" lean-forward="false" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+        <state relative-caret-position="216">
+          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/templates/LingoLearn/ProfilePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LingoLearn/static/LingoLearn/ProfilePage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

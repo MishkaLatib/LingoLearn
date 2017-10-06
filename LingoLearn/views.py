@@ -1,23 +1,20 @@
-from django.http import HttpRequest, request
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
 import random
-import request
-from django import forms
 from .models import Category
-from .models import User
 from .models import Item
-from .models import Points
+from .models import Badges
 from django.views import generic
-from django.views.generic import View, FormView
+from django.views.generic import View
 from .forms import UserForm
-from django.forms import ModelChoiceField
-from django.contrib.auth import user_logged_in
 from django.contrib.auth import authenticate, login
-import getpass
 
+#function to call LingoLearn Welcome page
 def WelcomePage(request):
     return render(request, 'LingoLearn/WelcomePage.html')
+
+
+#Displays Categories that can be selected to begin in Learning mode.
+## Category links to set of images under the category, linked in the database
 
 class CategoriesPage(generic.ListView):
     template_name = 'LingoLearn/CategoriesPage.html'
@@ -25,14 +22,22 @@ class CategoriesPage(generic.ListView):
     def get_queryset(self):
         return Category.objects.all()
 
+
+#Displays all images pulled from database with Foreign key
+# matching that of the selected Category from the CategoriesPage
+
 class item_list(generic.ListView):
     template_name = 'LingoLearn/items.html'
     context_object_name = "items"
     def get_queryset(self):
 
         i = Item.objects.filter(category_id=self.kwargs['category_id'])
-        print(i)
         return i
+
+
+#User form to insert Name, Surname, Username and Password in order to register an account with LingoLearn
+#This can be monitored via the admin site
+#makes use of Django admin imports
 
 class UserFormView(View):
     form_class = UserForm
@@ -63,22 +68,24 @@ class UserFormView(View):
 
                 if user.is_active:
                     login(request, user)
-                    return redirect('WelcomePage')
+                    return redirect('LingoLearn:WelcomePage')
 
         return render(request, self.template_name, {'form': form})
 
 
+
+#Personalised Welcome page, indicating Login
+
 class ProfileView(generic.ListView):
     template_name = 'LingoLearn/ProfilePage.html'
-    context_object_name = "points"
+    context_object_name = "badges"
 
     def get_queryset(self):
-        p = Points.objects.all()
-        points = p[:4]
-        return points
+        badges = Badges.objects.all()
+        return badges
 
 
-#Lingo Practise Game related Views
+#Lingo Practise Game related Views. Links to items page
 
 class GameCategoriesPage(generic.ListView):
     template_name = 'LingoLearn/GameCategoriesPage.html'
@@ -86,6 +93,8 @@ class GameCategoriesPage(generic.ListView):
     def get_queryset(self):
         return Category.objects.all()
 
+
+#Class to load game depending on selected category. 5 images are shown at once.
 
 class GamePlay(generic.ListView):
     template_name = 'LingoLearn/GamePlay.html'
@@ -96,6 +105,7 @@ class GamePlay(generic.ListView):
         self.POST = None
         self.GET = None
 
+    # 6 elements are passed through as a list as the 6th is the answer, and therefore a dupllicate of another one of the 5. This is for running answer checks later
 
     def get_queryset(self):
         items = list(Item.objects.filter(category_id=self.kwargs['category_id']))
@@ -104,17 +114,22 @@ class GamePlay(generic.ListView):
         possible_answers =list(content)
         random.shuffle(possible_answers)
         answer = possible_answers[0]
-        #self.request.session['answer'] = "hfdkjfnhdkujnf"
-        #self.request.session.save()
         content.append(answer)
         return content
 
 
-def GainPoints(request):
-    if request == 'POST':
-        pointup = request.POST.get('pointup')
-        p = Points.objects
+#currently unused. Intended to send score back to ProfilePage
 
-        post = Points(user=request.user, points=points+pointup, )
-        post.save()
+score = None
+
+def getScore(self, request, score):
+    if score==None:
+        score = 0
+        return score
+    else:
+        return score
+
+def GainPoints(self, request, score):
+    score+=1
+    return score
 

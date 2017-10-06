@@ -18,12 +18,15 @@
 <body>
 
     <div id="Item_Choices">
-        <header> - {{ "Choose the Correct Image for: " }} - </header>
+
+        <header> - {{ "Choose the Correct Image for:" }}{{ Score }} - </header>
 
         <div id="FrenchWord">
             <h1> {{ content.5.French}} </h1>
-        </div>
+             <img id="outcomePass" class="responseP" style='visibility:hidden;' src="https://openclipart.org/image/2400px/svg_to_png/167549/Kliponious-green-tick.png" width="100px" height="120px"/>
 
+        </div>
+        <div id="pics">
                {% for i in content %}
                    {% if forloop.counter <= 5 %}
                         <div class="item-card">
@@ -31,9 +34,12 @@
                         </div>
                    {% endif %}
                 {% endfor %}
-    </div>
-</body>
+        </div>
 
+    </div>
+
+
+</body>
 
 
 <script>
@@ -44,21 +50,43 @@
            var id = $(this).attr('id');
            var element = document.getElementById(id);
            var element2 = document.getElementById({{ content.5.id }});
+           c = document.getElementById('outcomePass');
 
-           if (element === element2){
-
-               $.ajax({
-                   url: "GainPoints/", // the endpoint
-                   type: "POST", // http method
-                   data: {pointup: 5} // data sent with the post request
-
-               });
-
+           if(element!==element2){
+               c.src="http://pluspng.com/img-png/red-x-png-image-35396-500.png";
+               element2.borderWidth= 500;
+               element2.borderColor='red';
            }
+           setTimeout(function() {
+               c.style.visibility = 'visible';
+               }, 400);
+           setTimeout(function () {
+               element2.style.borderWidth = '10px';
+               element2.style.borderColor = 'lightgreen';
+               }, 1000);
+
+
+
+           setTimeout(function() {
+               window.location.reload();
+               url('/getScore/');
+                   function getScore() {
+                       $.ajax({
+                           url: "/Score/"// the endpoint
+                            });
+                            }
+
+
+               }, 2500);
+
         });
 
      });
+
+
 </script>
+
+
 </html>
 {% endblock %}
 

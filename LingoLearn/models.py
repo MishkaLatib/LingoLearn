@@ -1,11 +1,11 @@
 from django.db import models
-from django.contrib.admin.widgets import AdminFileWidget
-from django.utils.translation import ugettext as _
-from django.utils.safestring import mark_safe
-from django.conf import settings
-from PIL import Image
-import os
 from django.contrib.auth.models import User
+
+#Models which create database tables to be filled, with field type and legnth requirments.
+
+
+#Category class to keep track of the learning Categories available in the app: i.e Food, The Body...
+#Keeps track of Category name, translation and an appropriate image
 
 class Category(models.Model):
     category_english = models.CharField(max_length=30)
@@ -18,6 +18,9 @@ class Category(models.Model):
     def __unicode__(self):
         return self.category_english
 
+#Item class which creates Object instances of items linked to a specific category.
+#Items include the name, translation and appropriate image
+#Single item links to Category, Category can have lots of images
 
 class Item(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -28,6 +31,7 @@ class Item(models.Model):
     def __unicode__(self):
         return '%s %s %s %s %s' % (self.category, "  :  ", self.English,"-->", self.French)
 
+#Keeps track of user points
 
 class Points(models.Model):
     user = models.ForeignKey(User)
@@ -37,10 +41,13 @@ class Points(models.Model):
     class Meta:
         verbose_name_plural = "Points"
 
+    def __unicode__(self):
+        return '%s %s %s %s %s' % (self.user, "  :  ", self.category,"-->", self.points)
+
+#Tracks Badges based on user points
 
 class Badges(models.Model):
    badge_title = models.CharField(max_length=50)
-   category = models.ForeignKey(Category, on_delete=models.CASCADE)
    points_needed = models.IntegerField(default=0)
    badge_image = models.CharField(max_length=1000)
    def __str__(self):

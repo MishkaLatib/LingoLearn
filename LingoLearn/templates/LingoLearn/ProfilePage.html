@@ -13,15 +13,23 @@
         <title>"Welcome {{ user.username }}"</title>
     </head>
 
+
+       <!-- Shows personalised welcome page with own name and badges.
+       Other categoreis in Nav bar also available to use and explore-->
+
+
     <body>
     <div id="A">
-        <header>Welcome to your LingoLearn Page, {{ user.username }}!</header>
+        <header>Welcome to LingoLearn, {{ user.username }}!</header>
         <h1>Here are your current badges : </h1>
-        {% for x in points %}
-            <div>{{ x.point }}</div>
-            <
 
-        {% endfor %}
+         {% for badge in badges %}
+             <div id="badgediv">
+                 <img id="badges" src="{{ badge.badge_image }}" width="200px" height="170px"/>
+             </div>
+
+
+             {% endfor %}
 
     </div>
     <img src="http://images.cpcache.com/image/24315092.png" class="img-responsive" width="550px">

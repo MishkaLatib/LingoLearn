@@ -7,6 +7,7 @@
     {% load staticfiles %}
 
     <!--uses same styling as CategoriesPage-->
+
         <link rel="stylesheet" type="text/css" href="{% static 'LingoLearn/CategoriesPage.css' %}" />
 <head>
     <meta charset="UTF-8">
@@ -18,6 +19,10 @@
     <style>
     </style>
         <h2 class="heading">  -  Pick your Category Challenge  - </h2>
+
+
+            <!--Displays all categories available to choose from for Learning and playing game modes -->
+
 
         {% for category in categories %}
             <a class="btn btn.special Cat_choice" id="red_choice" href="/LingoLearn/CategoryChoice/{{ category.id }}/GamePlay">{{ category.category_english }}<br><br>
