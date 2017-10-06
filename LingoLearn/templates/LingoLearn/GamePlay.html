@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 {%  extends 'LingoLearn/base.html' %}
@@ -20,18 +21,45 @@
         <header> - {{ "Choose the Correct Image for: " }} - </header>
 
         <div id="FrenchWord">
-            <h1> {{ content.pop.French }} </h1>
+            <h1> {{ content.5.French}} </h1>
         </div>
 
-                {% for i in content %}
-
+               {% for i in content %}
+                   {% if forloop.counter <= 5 %}
                         <div class="item-card">
-                                <input type=image id="selection" name="button" src="{{ i.Image }}" width="200px" height="170px"/>
+                                <input type=image id="{{ i.id }}" class="items" name="button" src="{{ i.Image }}" width="200px" height="170px"/>
                         </div>
+                   {% endif %}
                 {% endfor %}
     </div>
 </body>
 
 
+
+<script>
+    $(document).ready(function(){
+        //console.log("work");
+        $(".items").on('click',function(){
+           //console.log("lol");
+           var id = $(this).attr('id');
+           var element = document.getElementById(id);
+           var element2 = document.getElementById({{ content.5.id }});
+
+           if (element === element2){
+
+               $.ajax({
+                   url: "GainPoints/", // the endpoint
+                   type: "POST", // http method
+                   data: {pointup: 5} // data sent with the post request
+
+               });
+
+           }
+        });
+
+     });
+</script>
 </html>
 {% endblock %}
+
+

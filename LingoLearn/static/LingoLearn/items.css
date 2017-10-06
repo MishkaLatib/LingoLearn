@@ -73,7 +73,7 @@ width: 100%;
 height: 100%;
 }
 
-#selection{
+.items{
     background-color: white;
     border-radius: 10px;
     border: 1px solid black;
@@ -101,3 +101,11 @@ h1 {
     -o-border-image: url(http://weclipart.com/gimg/FC7612AFA6603A30/vine-border-green-md.png) 50 round; /* Opera 11-12.1 */
     border-image: url(http://weclipart.com/gimg/FC7612AFA6603A30/vine-border-green-md.png) 50 round;
 }
+
+h2{
+    font-family: 'R', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: darkgreen;
+}
+

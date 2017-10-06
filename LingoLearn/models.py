@@ -30,7 +30,7 @@ class Item(models.Model):
 
 
 class Points(models.Model):
-    user = models.OneToOneField(User)
+    user = models.ForeignKey(User)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     points = models.IntegerField(default=0)
 

@@ -1,6 +1,10 @@
 from django.contrib.auth.models import User
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
+from django.forms import RadioSelect
+
+from LingoLearn.models import Item
+import random
 
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)
@@ -11,3 +15,7 @@ class UserForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ['username', 'password', 'first_name', 'last_name']
+
+
+
+

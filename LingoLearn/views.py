@@ -1,15 +1,20 @@
-from django.http import HttpResponse, request
+from django.http import HttpRequest, request
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from django.template.backends import django
 import random
+import request
+from django import forms
 from .models import Category
+from .models import User
 from .models import Item
+from .models import Points
 from django.views import generic
-from django.views.generic import View
+from django.views.generic import View, FormView
 from .forms import UserForm
+from django.forms import ModelChoiceField
 from django.contrib.auth import user_logged_in
 from django.contrib.auth import authenticate, login
+import getpass
 
 def WelcomePage(request):
     return render(request, 'LingoLearn/WelcomePage.html')
@@ -24,6 +29,7 @@ class item_list(generic.ListView):
     template_name = 'LingoLearn/items.html'
     context_object_name = "items"
     def get_queryset(self):
+
         i = Item.objects.filter(category_id=self.kwargs['category_id'])
         print(i)
         return i
@@ -62,8 +68,14 @@ class UserFormView(View):
         return render(request, self.template_name, {'form': form})
 
 
-def ProfileView(request):
-    return render(request, 'LingoLearn/ProfilePage.html')
+class ProfileView(generic.ListView):
+    template_name = 'LingoLearn/ProfilePage.html'
+    context_object_name = "points"
+
+    def get_queryset(self):
+        p = Points.objects.all()
+        points = p[:4]
+        return points
 
 
 #Lingo Practise Game related Views
@@ -84,6 +96,7 @@ class GamePlay(generic.ListView):
         self.POST = None
         self.GET = None
 
+
     def get_queryset(self):
         items = list(Item.objects.filter(category_id=self.kwargs['category_id']))
         random.shuffle(items)
@@ -96,6 +109,12 @@ class GamePlay(generic.ListView):
         content.append(answer)
         return content
 
-    def mymethod(request):
-        if request.POST.get('button'):
-            print('user clicked summary')
+
+def GainPoints(request):
+    if request == 'POST':
+        pointup = request.POST.get('pointup')
+        p = Points.objects
+
+        post = Points(user=request.user, points=points+pointup, )
+        post.save()
+

@@ -23,17 +23,17 @@
             <!--logo-->
             <div class="navbar-header">
 
-                 <a class="navbar-brand" href="{% url 'WelcomePage' %}">LingoLearn</a>
+                 <a class="navbar-brand" href="{% url 'LingoLearn:WelcomePage' %}">LingoLearn</a>
 
             </div>
         </div>
     </nav>
         <div id="A">
             <header>Welcome to LingoLearn!</header>
-            <a href="{% url 'register' %}" role="button" id="SignUp" class="btn btn-primary btn-leg btn-block">
+            <a href="{% url 'LingoLearn:register' %}" role="button" id="SignUp" class="btn btn-primary btn-leg btn-block">
                  Create New Account
             </a>
-            <a href="{% url 'login' %}" role="button" id="SignIn" class="btn btn-primary btn-leg btn-block">
+            <a href="{% url 'LingoLearn:login' %}" role="button" id="SignIn" class="btn btn-primary btn-leg btn-block">
                  Sign In
             </a>
         </div>
